@@ -55,6 +55,7 @@ def main():
     elif userinput == 'n':
         new_nurse = N(userfn, userln, userbirthday, usergender, usernumber, useraddress)
         print(f'{userfn} {userln} has been added to the list of nurses!')
+    
 
 main()
 
@@ -65,4 +66,4 @@ main()
 # patient appointments
 # patient treatment
 # patient medical records
-# departments
+# different departments

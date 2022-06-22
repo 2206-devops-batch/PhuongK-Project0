@@ -20,9 +20,6 @@ class doctors(employees):
     def get_contact(self):
         print(self.number, self.address)
 
-# doctor availablility
-# doctor specialty
-
 class nurses(employees):
     total_num_nurses = 0
     def __init__(self, fn, ln, birthday, gender, number, address):
@@ -35,6 +32,3 @@ class nurses(employees):
         
     def get_contact(self):
         print(self.number, self.address)
-
-# nurse specialty
-# nurse availability
