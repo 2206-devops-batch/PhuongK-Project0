@@ -4,7 +4,7 @@
 # To start the program, run Main.py.
 
 # Main Functionalities
-# New patient input
+  New patient input
 # New employee (nurse, doctor) input
 # list of employees and patients in .txt files
 
