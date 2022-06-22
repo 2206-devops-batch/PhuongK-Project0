@@ -14,7 +14,7 @@ def main():
     elif (userinput) == 'n':
         person = 'nurse\'s'
     else:
-        raise ValueError(print('Please enter p, d or n'))
+        raise ValueError('Please enter p, d or n')
 
     userfn = input(f"Please enter the {person} first name: ")
     userln = input(f"Please enter the {person} last name: ")
@@ -24,13 +24,13 @@ def main():
     elif userbirthday in atoz:
         raise TypeError('Please enter a valid birthday in the proper format')
     elif int(userbirthday[:2]) <= 0 or int(userbirthday[:2]) > 12:
-        raise ValueError(print('Please enter a valid birthday in the proper format'))
+        raise ValueError('Please enter a valid birthday in the proper format')
     elif int(userbirthday[3:5]) <= 0 or int(userbirthday[:2]) > 31:
-        raise ValueError(print('Please enter a valid birthday in the proper format'))
+        raise ValueError('Please enter a valid birthday in the proper format')
     elif int(userbirthday[6:]) > 2022:
-        raise ValueError(print('Please enter a valid birthday in the proper format'))
+        raise ValueError('Please enter a valid birthday in the proper format')
     elif userbirthday[2] != '/' or userbirthday[5] != '/':
-        raise ValueError(print('Please enter a valid birthday in the proper format'))
+        raise ValueError('Please enter a valid birthday in the proper format')
 
     usergender = input(f"Please enter the {person} gender, 'Male', 'Female' or 'Non-binary': ")
     if usergender != 'Male' and usergender != 'Female' and usergender != 'Non-binary':
@@ -42,7 +42,7 @@ def main():
     elif usernumber in atoz:
         raise TypeError('Please enter a valid number in the proper format')
     elif usernumber[3] != '-' or usernumber[7] != '-':
-        raise ValueError(print('Please enter a valid number in the proper format'))
+        raise ValueError('Please enter a valid number in the proper format')
 
     useraddress = input(f"Please enter the {person} address.\n")
 
